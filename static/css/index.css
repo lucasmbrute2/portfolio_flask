@@ -13,8 +13,7 @@
 
 body,html{
     
-    width: 100%;
-    height: 100%;
+   
     scroll-behavior: smooth;
 
 }
@@ -24,33 +23,32 @@ body,html{
 /* Parte do menu do site */
 
 #cabecalho {
-    
     position: fixed;
-    width: 100%;
-    padding: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #3d3d3d;
+    width: 100%;
     
+    
+    
+}
+#cabecalho ul{
+
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 
-#cabecalho a{
 
+#cabecalho .itensCabecalho {
     
-    color: #fff
-    
-}
-
-
-.itensCabecalho {
+   
     
     
     
-    display: inline;
-    padding: 2rem;
-
+    
+    padding: 1rem;
+    
     color: rgba(255, 255, 255, 0.733);
     text-shadow: .1em .1em .2em black;
     font-size: .9rem;
@@ -58,7 +56,7 @@ body,html{
 }
 
 
-.itensCabecalho:hover{
+#cabecalho .itensCabecalho:hover{
 
 
     color: #fff
@@ -67,97 +65,203 @@ body,html{
 
 /* Aqui começa de fato o conteúdo */
 
+
 #introducao{
-    
+    height: 80vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     
-    height: 80vh;
-    background-color: #ebebeb;
-
 }
+
 #introducao .titulo{
 
-    text-align: center;
-    font-size: 90px;
     
-    color: #82be93;
-    
+    margin-top: 13rem;
+    font-size: 80px;
+    color: #A9DEB8
 }
+
 #introducao .subtitulo{
-   
+
     display: flex;
     justify-content: center;
-    color: #3d3d3dc2;
-    font-weight: 500;
-    font-size: 17px;
+
 }
+
 
 #introducao .imgComputadores{
-
-    width: 500px;
-
+    
+    margin: 10rem 0rem 0rem 5rem;
+    /* padding: 5rem 0rem 0rem 0rem; */
+    width: 400px;
 }
 
-/* Section com foto e descrição */
+
+
+
+
+/* 
+Aqui começa a parte sobre minha descrição */
 
 #sobreMim{
-    
-    /* width: 100vw; */
+    padding: 3rem;
     display: flex;
-    background-color: #6c8b77;
+    flex-wrap: wrap;
     
-}
-
-#sobreMim .imgLucas{
-    
-    padding: 48px;
-    width: 280px;
-    
-}
-
-
-#descricaoLucas{
-
-    display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 20rem;
-    
-    color: rgb(255, 255, 255);
+
+    background-color: #6c8b77;
+
+}   
+
+#sobreMim #descricaoLucas{
+
+    width: 60%;
     
 }
 
-#descricaoLucas .texto{
+#sobreMim img{
 
-    margin: 1rem 1rem;
+    margin-right: 100px;
+    width: 300px;
 
 }
 
-#projetos .titulo h2{
+
+
+
+
+/* Parte de apresentação dos projetos feitos */
+#projetos{
+
+    height: 60vh;
+
+}
+
+#projetos .titulo{
 
     text-align: center;
     padding: 3rem;
+    font-size: 1.5rem;
+    color: 
 }
 
 #projetos #espacamento{
-
-    flex-wrap: wrap;
+    
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     
 
 }
 
-#projetos #espacamento img{
 
-    
-    padding: 5rem 1rem 1rem 1rem;
-    
-    margin: 0rem 1rem 0rem;
+#projetos #espacamento a img{
+
+    width: 300px;
     
 }
 
-#tecnologias 
+
+/* seção de habilidades com tecnologias */
+
+#tecnologias{
+
+    background-color: #ebebeb;
+    padding: 5rem;
+
+}
+
+
+#tecnologias .linguagens{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+#tecnologias .linguagens img{
+
+    
+    padding: 1rem;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media screen and (max-width: 970px){
+
+    #introducao .imgComputadores{
+
+        width: 300px;
+
+    }
+    #introducao .titulo{
+
+        font-size: 40px;
+
+    }
+
+}
+
+
+
+/* tablet pequeuno sla kk */
+@media screen and (max-width: 783px){
+
+
+    
+    #introducao .titulo{
+
+        font-size: 30px;
+
+    }
+    
+    #introducao .imgComputadores{
+
+        width: 300px;
+
+    }
+
+}
+
+
+/* celular */
+@media screen and (max-width: 535px){
+
+
+    #introducao .titulo{
+
+        font-size: 
+
+    }
+
+
+    #introducao .imgComputadores{
+
+        width: 200px;
+        display: none;
+        
+        
+    }
+
+}
