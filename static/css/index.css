@@ -15,7 +15,6 @@ body,html{
     
    
     scroll-behavior: smooth;
-
 }
 
     
@@ -118,6 +117,7 @@ Aqui começa a parte sobre minha descrição */
 
     width: 60%;
     
+    
 }
 
 #sobreMim img{
@@ -134,14 +134,13 @@ Aqui começa a parte sobre minha descrição */
 /* Parte de apresentação dos projetos feitos */
 #projetos{
 
-    height: 60vh;
+    padding: 3rem 2rem 10rem 2rem;
 
 }
 
 #projetos .titulo{
-
+    padding: 0rem 0rem 3rem 0rem;
     text-align: center;
-    padding: 3rem;
     font-size: 1.5rem;
     color: 
 }
@@ -177,7 +176,7 @@ Aqui começa a parte sobre minha descrição */
 #tecnologias .linguagens{
 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 
@@ -185,12 +184,52 @@ Aqui começa a parte sobre minha descrição */
 
     
     padding: 1rem;
-    height: 100px;
+    
+    height: 130px;
+
+}
+
+#form{
+    
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#form .tituloFormulario h2{
+
+    /* width: 100%; */
+    text-align: center;
+    padding: 3rem 0rem 8rem 0rem;
+    font-size: 2.5rem;
+    
+
+}
+
+#form form{
+    
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+#form .formulario{
+
+
+    
+
 }
 
 
 
+#form .formulario, input,textarea{
 
+    width: 100%;
+    outline:none;
+    
+}
 
 
 
