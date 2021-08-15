@@ -43,13 +43,8 @@ body,html{
 
 #cabecalho .itensCabecalho {
     
-   
-    
-    
-    
-    
     padding: 1rem;
-    
+    font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, 0.733);
     text-shadow: .1em .1em .2em black;
     font-size: .9rem;
@@ -216,8 +211,8 @@ Aqui começa a parte sobre minha descrição */
     justify-content: center;
     flex-wrap: wrap;
     width: 30%;
-    box-shadow: 2px 5px 5px 5px rgba(29, 129, 67, 0.301);
-    
+    box-shadow: 1px 9px 19px 4px rgba(29, 129, 67, 0.301);
+    border-radius: .5rem;
 
 }
 
@@ -228,6 +223,7 @@ Aqui começa a parte sobre minha descrição */
     padding: 3rem 0rem 5rem 0rem;
     font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.767);
 
 }
 
@@ -273,7 +269,7 @@ Aqui começa a parte sobre minha descrição */
     
     background-color:#A9DEB8;
 
-    
+    color: rgba(0, 0, 0, 0.849);
     font-family: 'Roboto', sans-serif;
     font-size: .9rem;
     transition: .2s ease-out;
@@ -290,7 +286,11 @@ Aqui começa a parte sobre minha descrição */
 
 
 
+footer#contatos{
 
+    text-align: center;
+
+}
 
 
 
