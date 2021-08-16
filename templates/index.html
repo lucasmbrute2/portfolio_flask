@@ -7,98 +7,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfólio</title>
 
 </head>
 
 <body>
-    
+
     <nav id='cabecalho'>
-        <a href="/" class='logo'><img src="../static/img/soundslogo1.png" alt=""></a>
-        <div class='menu-mobile'>
-            <div class='line1'></div>
-            <div class='line2'></div>
-            <div class='line3'></div>
-        </div>
+        
+        <input type="checkbox" id='check'>
+        <label for="check" class='checkbttn'>
+            <i class="fa fa-bars"></i>
+        </label>
+        
+        <label class='logo'>Sounds</label>
         
         <ul class='nav-list'>
-            <a href="#introducao"><li class='itensCabecalho'>Inicio</li></a>
-            <a href="#sobreMim"><li class='itensCabecalho'>Sobre mim</li></a>
-            <a href="#projetos"><li class='itensCabecalho'>Projetos</li></a>
-            <a href="#tecnologias"><li class='itensCabecalho'>Habilidades</li></a>
             
-            <a href="#contatos"><li class='itensCabecalho'>Contato</li></a>
+            <li class='itensCabecalho'><a href="#introducao">Inicio</a></li>
+            <li class='itensCabecalho'><a href="#sobreMim">Sobre mim</a></li>
+            <li class='itensCabecalho'><a href="#projetos">Projetos</a></li>
+            <li class='itensCabecalho'><a href="#tecnologias">Habilidades</a>
+            </li>
+            <li class='itensCabecalho'><a href="#contatos">Contato</a></li>
             
-        </ul>
+        </ul>   
     </nav>
+
+        
+        
+        
 
 
     <section id='introducao'>
         <div>
-            <h1 class = 'titulo'>&ltLucas Victor /&gt</h1>
-            <span class ='subtitulo'>Full Stack Developer</span>
-        </div>   
-            
-        <div >    
+            <h1 class='titulo'>&ltLucas Victor /&gt</h1>
+            <span class='subtitulo'>Full Stack Developer</span>
+        </div>
+
+        <div>
             <img class='imgComputadores' src="../static/img/Programming-bro.png" alt="um computador com três monitores">
         </div>
-    
+
     </section>
 
 
-    
+
     <section id='sobreMim'>
 
-            <div>
-                
-                <img class ='imgLucas' src="../static/img/testesoruz3.png" alt="">
-                
-            </div>
+        <div>
 
-            <div id ='descricaoLucas'> 
-                <p class = 'texto'>Apaixonado por tecnologia. Atualmente estou mudando de carreira, antes cursava cinema e agora me encontro estudando desenvolvimento Web. Sou uma pessoa extrovertida, comunicativa, motivada, me adapto fácil as adversidades e gosto de trabalhar em equipe.
-                    A tecnologia é o futuro e eu me vejo no meio disso.</p>
-            </div>
-            
-           
-       
+            <img class='imgLucas' src="../static/img/testesoruz3.png" alt="">
+
+        </div>
+
+        <div id='descricaoLucas'>
+            <p class='texto'>Apaixonado por tecnologia. Atualmente estou mudando de carreira, antes cursava cinema e
+                agora me encontro estudando desenvolvimento Web. Sou uma pessoa extrovertida, comunicativa, motivada, me
+                adapto fácil as adversidades e gosto de trabalhar em equipe.
+                A tecnologia é o futuro e eu me vejo no meio disso.</p>
+        </div>
+
+
+
 
     </section>
 
     <section id='projetos'>
-        
-            <div class= 'titulo'>
-                <h2>
-                Projetos
-                </h2>
-            </div>
-            
-            <div id ='espacamento'>
-                
-                
-                <a href="/"><img src="../static/img/arquivo_edit.png" alt=""></a>
-                
-                <a href=""><img src="../static/img/coming soon.webp" alt=""></a>
-                <a href=""><img src="../static/img/coming soon.webp" alt=""></a>
-                <a href=""><img src="../static/img/coming soon.webp" alt=""></a>
-                
-                
-            </div>
-    </section>
-                
-                
-                
-           
 
-        
+        <div class='titulo'>
+            <h2>
+                Projetos
+            </h2>
+        </div>
+
+        <div id='espacamento'>
+
+
+            <a href="/"><img src="../static/img/arquivo_edit.png" alt=""></a>
+
+            <a href=""><img src="../static/img/coming soon.webp" alt=""></a>
+            <a href=""><img src="../static/img/coming soon.webp" alt=""></a>
+            <a href=""><img src="../static/img/coming soon.webp" alt=""></a>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
 
 
 
     <section id='tecnologias'>
-        
+
         <h2>Habilidades</h2>
         <div class='linguagens'>
-            
+
             <img src="../static/img/html5-logo.png" alt="">
             <img src="../static/img/css3.png" alt="">
             <img src="../static/img/JavaScript-logo.png" alt="">
@@ -106,59 +115,52 @@
             <img src="../static/img/python.png" alt="">
             <img src="../static/img/flask.png" alt="">
             <img src="../static/img/postgre.png" alt="">
-            
+
         </div>
 
     </section>
 
     <section id='form'>
-        
-        <div class ='formulario'>
-        
+
+        <div class='formulario'>
+
             <h2>
-            Entre em contato  
+                Entre em contato
             </h2>
-            <form action=""  method='POST'>
+            <form action="" method='POST'>
                 <label for="nome">Nome</label>
                 <input type="text" id='nome'>
 
                 <label for="email">E-mail</label>
-                <input type="text" id ='email'>
+                <input type="text" id='email'>
 
                 <label for="mensagem">Mensagem</label>
                 <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
 
                 <button type="submit" id='bttn'>Enviar</button>
-            
+
             </form>
-        
-            
+
+
         </div>
-        
-       
+
+
 
     </section>
 
 
-    <footer id ='contatos'>
+    <footer id='contatos'>
         <div class='redesSociais'>
-            
+
             <img src="" alt="">
             <img src="" alt="">
             <img src="" alt="">
-            
+
             <p>&#169 2021 Lucas Victor. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="../static/js/index.js"></script>
 </body>
 
 </html>
-            
-            
-          
-            
-             
-            
-            
-            
