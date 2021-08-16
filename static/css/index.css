@@ -46,9 +46,10 @@ body,html{
 #cabecalho .logo{
 
     color: #fff;
-    font-size: 35px;
+    font-size: 3rem;
     padding: 0 100px;
     line-height: 50px;
+    font-family: myFirstFont;
 }
     
     
@@ -378,6 +379,7 @@ footer#contatos{
         text-align: center;
         transition: all .5s;
         margin: 0;
+        
     }
 
     #cabecalho .nav-list li{
@@ -403,6 +405,23 @@ footer#contatos{
     }
 
 }
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(/fonts/Cream\ Cake.otf);
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Tablet */
 
 
